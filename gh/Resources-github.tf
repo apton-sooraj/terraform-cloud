@@ -1,6 +1,12 @@
-resource "github_repository" "github-repo-1" {
-  name        = "terraform-demo-1"
+resource "github_repository" "example" {
+  name        = "example"
   description = "My awesome codebase"
 
   visibility = "public"
+
+  template {
+    owner                = "github"
+    repository           = "terraform-module-template"
+    include_all_branches = true
+  }
 }
