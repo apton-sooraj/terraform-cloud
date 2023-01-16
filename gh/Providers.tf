@@ -10,6 +10,6 @@ terraform {
 # Configure the GitHub Provider
 
 provider "github" {
-  token = var.ghT
+  token = var.ghtocken
   owner = "demo"
 }
