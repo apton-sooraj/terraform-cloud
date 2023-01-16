@@ -7,6 +7,5 @@ resource "github_repository" "example" {
   template {
     owner                = "github"
     repository           = "terraform-module-template"
-    include_all_branches = true
   }
 }
